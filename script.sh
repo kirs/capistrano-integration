@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install git-core build-essential tklib zlib1g-dev libssl-dev libreadline-gplv2-dev libxml2 libxml2-dev libxslt1-dev libsqlite3-dev
+apt-get install -y git-core build-essential tklib zlib1g-dev libssl-dev libreadline-gplv2-dev libxml2 libxml2-dev libxslt1-dev libsqlite3-dev
 adduser --disabled-password --gecos "" deploy
 echo "deploy:deploy" | chpasswd
 
